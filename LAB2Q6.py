@@ -40,3 +40,28 @@ for i in range(1, n + 1):
         print("*", end=" ")
 
     print()
+
+    n = int(input("Enter an odd number: "))
+
+# Upper half
+for i in range(n // 2 + 1):
+    spaces = n // 2 - i
+    print(" " * spaces, end="")
+
+    if i == 0:
+        print("*")
+    else:
+        middle_spaces = 2 * i - 1
+        print("" + " " * middle_spaces + "")
+
+# Lower half
+for i in range(n // 2 - 1, -1, -1):
+    spaces = n // 2 - i
+    print(" " * spaces, end="")
+
+    if i == 0:
+        print("*")
+    else:
+        middle_spaces = 2 * i - 1
+        print("" + " " * middle_spaces + "")
+        
